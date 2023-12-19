@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Middleware to verify working hours
 const workingHoursMiddleware = (req, res, next) => {
@@ -37,7 +38,7 @@ app.get("/contact", workingHoursMiddleware, (req, res) => {
 });
 
 // Start server
-const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
 });
