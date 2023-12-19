@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  gap: 20px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #2ecc71;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #777;
+}
+
+.main-section h2 {
+  margin-top: 20px;
+}
+
+.main-section p {
+  line-height: 1.6;
+}
+
+.styled-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #3498db;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+  background-color: #2980b9;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-item {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+
+  /* Nav styles */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  /* Content styles */
+  .content {
+    padding: 10px;
+  }
+
+  .hero-section {
+    padding: 20px 0;
+  }
+
+  /* Service item styles */
+  .service-item {
+    padding: 8px;
+  }
+}
